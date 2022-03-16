@@ -89,6 +89,9 @@ from .binaryexpr import (
     ExtractUint16,
     ExtractUint32,
     ExtractUint64,
+    BN256Add,
+    BN256ScalarMul,
+    BN256Pairing,
 )
 
 # ternary ops
@@ -265,4 +268,7 @@ __all__ = [
     "For",
     "Break",
     "Continue",
+    "BN256Add",
+    "BN256ScalarMul",
+    "BN256Pairing",
 ]

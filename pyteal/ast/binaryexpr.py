@@ -593,3 +593,33 @@ def ExtractUint64(string: Expr, offset: Expr) -> BinaryExpr:
         string,
         offset,
     )
+
+
+def BN256Add(a: Expr, b: Expr) -> BinaryExpr:
+    return BinaryExpr(
+        Op.bn256_add,
+        TealType.bytes,
+        TealType.bytes,
+        a,
+        b,
+    )
+
+
+def BN256ScalarMul(a: Expr, b: Expr) -> BinaryExpr:
+    return BinaryExpr(
+        Op.bn256_scalar_mul,
+        TealType.bytes,
+        TealType.bytes,
+        a,
+        b,
+    )
+
+
+def BN256Pairing(a: Expr, b: Expr) -> BinaryExpr:
+    return BinaryExpr(
+        Op.bn256_pairing,
+        TealType.bytes,
+        TealType.bytes,
+        a,
+        b,
+    )
