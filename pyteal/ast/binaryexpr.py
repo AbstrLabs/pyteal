@@ -619,7 +619,7 @@ def BN256Pairing(a: Expr, b: Expr) -> BinaryExpr:
     return BinaryExpr(
         Op.bn256_pairing,
         TealType.bytes,
-        TealType.bytes,
+        TealType.uint64,
         a,
         b,
     )
