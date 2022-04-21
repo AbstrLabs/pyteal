@@ -134,6 +134,8 @@ from .scratchvar import DynamicScratchVar, ScratchVar
 from .maybe import MaybeValue
 from .multi import MultiValue
 
+from .json_ref import JsonRef, JsonType
+
 __all__ = [
     "Expr",
     "LeafExpr",
@@ -271,4 +273,6 @@ __all__ = [
     "BN256Add",
     "BN256ScalarMul",
     "BN256Pairing",
+    "JsonRef",
+    "JsonType",
 ]

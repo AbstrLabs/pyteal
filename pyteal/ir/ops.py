@@ -182,6 +182,7 @@ class Op(Enum):
     bn256_add           = OpType("bn256_add",           Mode.Signature | Mode.Application, 6)
     bn256_scalar_mul    = OpType("bn256_scalar_mul",    Mode.Signature | Mode.Application, 6)
     bn256_pairing       = OpType("bn256_pairing",       Mode.Signature | Mode.Application, 6)
+    json_ref            = OpType("json_ref",            Mode.Signature | Mode.Application, 6)
 
     # fmt: on
 

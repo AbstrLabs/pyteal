@@ -28,6 +28,10 @@ intEnumValues = {
     "axfer": 4,
     "afrz": 5,
     "appl": 6,
+    # JsonType values
+    "JSONString": 0,
+    "JSONUint64": 1,
+    "JSONObject": 2,
 }
 
 
